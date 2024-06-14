@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lets count</title>
+    <link rel="icon" href="./images/counter.gif">
+</head>
+<link rel="stylesheet" href="Style.css">
+
+<body>
+    <header id="myheader">
+        <img id="counter" src="./images/counter.gif" alt="img-cont" width="85">
+        <h1> Let's count </h1>
+    </header>
+
+    <section id="content">
+        <div id="data">
+            <p>
+                Start: <input type="number" aria-label="Inicio" id="Inicio">
+            </p>
+            <p>
+                End:&nbsp <input type="number" aria-label="Fim" id="Fim">
+            </p>
+            <p>
+                Pace: <input type="number" aria-label="Passo" id="Passo">
+            </p>
+            <p><input class="Contar" type="button" value="Count" onclick="verificar()"></p>
+        </div>
+        <div class="res" id="res">
+
+            <p class="loader-text" id="loader-text">Waiting...</p>
+            <p class="load"></p>
+        </div>
+
+    </section>
+
+    <footer>&copy; Ollems Project</footer>
+    <script src="Script.js"></script>
+
+</body>
+
+</html>
